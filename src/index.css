@@ -63,3 +63,65 @@ main {
   font-size: 1.5rem;
   color: #61DAFB;
 }
+
+/* Small screens (sm) */
+@media (max-width: 480px) {
+  main {
+    background-size: 150px;
+    background-position-x: 108%; 
+    background-position-y: 70%; 
+  }
+
+  .nav--logo_text, .nav--title {
+    font-size: 14px;
+  }
+
+  .main--title {
+    font-size: 20px;
+  }
+
+  .main--facts {
+    margin-top: 20px;
+    max-width: 100%; 
+  }
+
+  .main--facts li {
+    line-height: 15px; 
+    padding-block: 6px;
+  }
+
+  .main--facts li::marker {
+    font-size: 1rem;
+  }
+}
+
+/* Medium screens (md) */
+@media (max-width: 768px) {
+  main {
+    background-size: 175px; 
+    background-position-x: 108%;
+    background-position-y: 70%;
+  }
+
+  .nav--logo_text, .nav--title {
+    font-size: 16px;
+  }
+
+  .main--title {
+    font-size: 22px;
+  }
+
+  .main--facts {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .main--facts li {
+    line-height: 17px;
+    padding-block: 8px;
+  }
+
+  .main--facts li::marker {
+    font-size: 1.2rem;
+  }
+}
